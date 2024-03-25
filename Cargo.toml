@@ -1,5 +1,6 @@
+workspace = { members = ["src/async_experiments"] }
 [package]
-name = "yaq-rust"
+name = "yaq_r"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,3 +8,7 @@ edition = "2021"
 
 [dependencies]
 apache-avro = "0.16.0"
+dirs = "5.0.1"
+toml = "0.8.11"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0"
