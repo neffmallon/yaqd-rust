@@ -116,8 +116,8 @@ impl From<HandshakeResponse> for Value{
 
 #[cfg(test)]
 mod tests {
+    // consider using rstest::rstest: https://stackoverflow.com/a/52843365/
     use std::collections::HashMap;
-    use std::hash::Hash;
     use apache_avro::{from_avro_datum, from_value, Schema, to_avro_datum};
     use apache_avro::types::Value;
     use crate::handshakes::{HANDSHAKE_REQUEST_SCHEMA, HANDSHAKE_RESPONSE_SCHEMA, HandshakeMatch, HandshakeRequest, HandshakeResponse};
